@@ -1,3 +1,9 @@
+def sum (a,b,c):
+    print (a+b+c)
+
+numbers = (4,6,10)
+sum(*numbers)
+
 
 # první funkce která se bude hodit
 def which_text(text_index):
@@ -63,8 +69,8 @@ oddelovac()
 
 # Uživatel vybere který text chce analyzovat
 print ("We have 3 text to analyze")
-user_insert_number_2 = input ("Insert number from 1 to 3: ")
-user_insert_number = int(user_insert_number_2) # neudělám-li z toho integer, funkce to neschroustá
+user_insert_number = int(input ("Insert number from 1 to 3: "))# neudělám-li z toho integer, funkce to neschroustá
+
 oddelovac()
 
 text = which_text(user_insert_number) # funkce "which text" přiřadí dle čísla zadaného uživatelem text k zanalyzování
